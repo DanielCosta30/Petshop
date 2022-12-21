@@ -28,8 +28,8 @@
     </header>
     <main class="container flex flex--centro flex--coluna">
         <section class="cartao cadastro">
-            <h1 class="cartao__titulo">Cadastrar um produto</h1>
-            <form action="#" class="flex flex--coluna">
+            <h1 class="cartao__titulo">Novo produto</h1>
+            <form action="#" class="flex flex--coluna" data-form>
                 <div class="input-container">
                     <input name="codigo" id="codigo" class="input" type="text" placeholder="Codigo" required data-codigo>
                     <label class="input-label" for="codigo">Código</label>
@@ -55,7 +55,9 @@
                     <label class="input-label" for="estoque">Estoque</label>
                     <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
                 </div>
-                <a href="./cadastro_prod_concluido.html" class="botao">Cadastrar produto</a>
+                <button type="submit"class="botao">
+                    Cadastrar
+                </button>
             </form>
         </section>
     </main>
