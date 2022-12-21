@@ -29,6 +29,14 @@
       "preco": "35,00 R$",
       "estoque": "8.00",
       "id": 1
+    },
+    {
+      "codigo": "002",
+      "produto": "Ração Premiun Filhote",
+      "unidade": "Kg",
+      "preco": "27,00 R$",
+      "estoque": "10.00",
+      "id": 2
     }
   ]
 }
