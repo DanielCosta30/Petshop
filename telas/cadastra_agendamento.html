@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doguito Petshop | Cadastro de produto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/cadastro_produto.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <img src="../assets/img/doguitoadm.svg" alt="Logo Doguito" class="cabecalho__logo">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="#">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="lista_produtos.html">Produtos</a></li>
+                <li class="cabecalho__link"><a href="lista_cliente.html">Clientes </a></li>
+                <li class="cabecalho__link"><a href="#">Agendamento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao__titulo">Novo produto</h1>
+            <form action="#" class="flex flex--coluna" data-form>
+                <div class="input-container">
+                    <input name="codigo" id="codigo" class="input" type="text" placeholder="Codigo" required data-codigo>
+                    <label class="input-label" for="codigo">Código</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+                <div class="input-container cadastro__produto-container">
+                    <input name="produto" id="produto" class="input" type="text" placeholder="produto" required data-produto>
+                    <label class="input-label" for="produto">Produto</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+                <div class="input-container cadastro__unidade-container">
+                    <input name="unidade" id="unidade" class="input" type="text" placeholder="unidade" required data-unidade>
+                    <label class="input-label" for="unidade">Unidade</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+                <div class="input-container cadastro__preco-container">
+                    <input name="preco" id="preco" class="input" type="text" placeholder="Preço" required data-preco >
+                    <label class="input-label" for="preco">Preço</label>
+                    <span class="input-mensagem-erro">Mensagem genérica de erro</span>
+                </div>
+                <div class="input-container cadastro__estoque-container">
+                    <input name="estoque" id="estoque" class="input" type="text" placeholder="estoque" required data-estoque>
+                    <label class="input-label" for="estoque">Estoque</label>
+                    <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
+                </div>
+                <button type="submit"class="botao">
+                    Cadastrar
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+<script type="module" src="../controller/cadastraProduto-controller.js"></script>
+
+</html>
