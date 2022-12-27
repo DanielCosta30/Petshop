@@ -1,4 +1,4 @@
-// realizar a conexão com a API
+// Realizar a conexão com a API
 var listaAgendamento = () => {
     return fetch(`http://localhost:3000/agendamento`)
     .then ( resposta => {
@@ -6,6 +6,9 @@ var listaAgendamento = () => {
     })
 }
 
+export var agendamentoService = {
+    listaAgendamento
+}
 
 
 
