@@ -14,11 +14,6 @@
       "nome": "João Paulo",
       "email": "Jp@gmail.com",
       "id": 5
-    },
-    {
-      "nome": "Maria",
-      "email": "maria@gmail.com",
-      "id": 6
     }
   ],
   "produto": [
@@ -26,7 +21,7 @@
       "codigo": "001",
       "produto": "Ração Premiun Adulto",
       "unidade": "Kg",
-      "preco": "35,00 R$",
+      "preco": "37,00 R$",
       "estoque": "8.00",
       "id": 1
     },
@@ -47,6 +42,14 @@
       "hora": "10:00Hs",
       "servico": "Banho",
       "id": 1
+    },
+    {
+      "cliente": "Daniel Costa",
+      "pet": "Zara",
+      "data": "23/12/22",
+      "hora": "12:00Hs",
+      "servico": "Banho + tosa",
+      "id": 2
     }
   ]
 }
