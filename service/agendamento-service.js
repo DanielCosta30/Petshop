@@ -6,8 +6,29 @@ var listaAgendamento = () => {
     })
 }
 
+var criaAgendamento = (cliente, pet, data, hora, servico) => {
+    return fetch(`http://localhost:3000/agendamento`, {
+        method:'POST',
+        headers: {
+            'content-type' : 'application/json'
+        },
+        body: JSON.stringify (
+            {
+                cliente: cliente,
+                pet: pet,
+                data: data,
+                hora: hora,
+                servico: servico      
+        }) 
+    })
+    .then (resposta => {
+        return resposta.body
+    })
+}
+
 export var agendamentoService = {
-    listaAgendamento
+    listaAgendamento,
+    criaAgendamento
 }
 
 
