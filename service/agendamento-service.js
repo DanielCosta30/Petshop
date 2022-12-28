@@ -26,9 +26,16 @@ var criaAgendamento = (cliente, pet, data, hora, servico) => {
     })
 }
 
+var removeAgendamento = (id) => {
+    return fetch(`http://localhost:3000/agendamento/${id}`, {
+        method:'DELETE'
+    })
+}
+
 export var agendamentoService = {
     listaAgendamento,
-    criaAgendamento
+    criaAgendamento,
+    removeAgendamento
 }
 
 
