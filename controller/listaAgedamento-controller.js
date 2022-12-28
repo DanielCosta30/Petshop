@@ -1,6 +1,8 @@
+import { agendamentoService } from '../service/agendamento-service.js'
+
 //cria templade
 const criaNovaLinha = (cliente, pet, data, hora, servico) => {
-    const linhaNovoCliente = document.createElement('tr')
+    const linhaNovoAgendamento = document.createElement('tr')
     const conteudo = `
         <td class="td" data-td>${cliente}</td>
                     <td>${pet}</td>
@@ -14,15 +16,16 @@ const criaNovaLinha = (cliente, pet, data, hora, servico) => {
                         </ul>
                     </td> 
                     `
-    linhaNovoCliente.innerHTML = conteudo
-    return linhaNovoCliente
+    linhaNovoAgendamento.innerHTML = conteudo
+    return linhaNovoAgendamento
 }
 
 //Percorrer o dom
 const tabela = document.querySelector('[data-tabela]')
 
 // Pegando os dados da API e realizando um loop para exibir os dados na tabela.
-listaAgendamento()
+
+agendamentoService.listaAgendamento()
 .then(data => {
     data.forEach ( elemento=> {
         tabela.appendChild (criaNovaLinha ( elemento.cliente, elemento.pet, elemento.data,elemento.hora, elemento.servico ))
