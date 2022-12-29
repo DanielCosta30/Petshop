@@ -11,7 +11,7 @@ const criaNovaLinha = (cliente, pet, data, hora, servico, id) => {
                     <td>${servico}</td>
                     <td>
                         <ul class="tabela__botoes-controle">
-                            <li><a href="../telas/edita_agendamento.html" class="botao-simples botao-simples--editar">Editar</a></li>
+                            <li><a href="../telas/edita_agendamento.html?id=${id}" class="botao-simples botao-simples--editar">Editar</a></li>
                             <li><button class="botao-simples botao-simples--excluir" type="button">Excluir</button></li>
                         </ul>
                     </td> 
