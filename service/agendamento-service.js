@@ -32,10 +32,19 @@ var removeAgendamento = (id) => {
     })
 }
 
+var detalhaAgendamento = (id) => {
+    return fetch(`http://localhost:3000/agendamento/${id}`)
+    .then ( resposta => {
+            return resposta.json()      
+    })
+}  
+
+
 export var agendamentoService = {
     listaAgendamento,
     criaAgendamento,
-    removeAgendamento
+    removeAgendamento,
+    detalhaAgendamento
 }
 
 
