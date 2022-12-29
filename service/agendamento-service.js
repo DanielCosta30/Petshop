@@ -39,12 +39,34 @@ var detalhaAgendamento = (id) => {
     })
 }  
 
+var atualizaAgendamento = (id, cliente, pet, data, hora, servico) => {
+    return fetch(`http://localhost:3000/agendamento/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-type' : 'application/json'
+            
+        },
+        body: JSON.stringify(
+            {
+               cliente: cliente,
+               pet:  pet,
+               data: data,
+               hora: hora,
+               servico: servico
+        })
+    })
+    .then(resposta => {
+        return resposta.json()
+    })
+}
+
 
 export var agendamentoService = {
     listaAgendamento,
     criaAgendamento,
     removeAgendamento,
-    detalhaAgendamento
+    detalhaAgendamento,
+    atualizaAgendamento
 }
 
 
