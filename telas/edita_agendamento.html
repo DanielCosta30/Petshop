@@ -21,7 +21,7 @@
                 <li class="cabecalho__link"><a href="#">Dashboard</a></li>
                 <li class="cabecalho__link"><a href="lista_produtos.html">Produtos</a></li>
                 <li class="cabecalho__link"><a href="lista_cliente.html">Clientes </a></li>
-                <li class="cabecalho__link"><a href="#">Pets</a></li>
+                <li class="cabecalho__link"><a href="lista_agendamento.html">Agendaemnto</a></li>
             </ul>
         </nav>
     </header>
@@ -30,32 +30,32 @@
             <h1 class="cartao__titulo">Edição</h1>
             <form action="#" class="flex flex--coluna" data-form>
                 <div class="input-container">
-                    <input name="codigo" id="codigo" class="input" type="text" placeholder="Codigo" required data-codigo>
-                    <label class="input-label" for="codigo">Código</label>
+                    <input name="cliente" id="cliente" class="input" type="text" placeholder="Cliente" required data-cliente>
+                    <label class="input-label" for="cliente">Cliente</label>
                     <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
                 </div>
                 <div class="input-container">
-                    <input name="produto" id="produto" class="input" type="text" placeholder="produto" required data-produto>
-                    <label class="input-label" for="produto">Produto</label>
+                    <input name="pet" id="pet" class="input" type="text" placeholder="Pet" required data-pet>
+                    <label class="input-label" for="pet">Pet</label>
                     <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
                 </div>
                 <div class="input-container">
-                    <input name="unidade" id="unidade" class="input" type="text" placeholder="unidade" required data-unidade>
-                    <label class="input-label" for="unidade">Unidade</label>
+                    <input name="hora" id="hora" class="input" type="text" placeholder="Hora" required data-hora>
+                    <label class="input-label" for="hora">Hora</label>
                     <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
                 </div>
                 <div class="input-container">
-                    <input name="preco" id="preco" class="input" type="text" placeholder="preco" required data-preco>
-                    <label class="input-label" for="precp">Preço R$</label>
+                    <input name="data" id="data" class="input" type="text" placeholder="Data" required data-data>
+                    <label class="input-label" for="data">Data</label>
                     <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
                 </div>
                 <div class="input-container">
-                    <input name="estoque" id="estoque" class="input" type="text" placeholder="estoque" required data-estoque>
-                    <label class="input-label" for="estoque">Estoque</label>
+                    <input name="servico" id="servico" class="input" type="text" placeholder="Serviço" required data-servico>
+                    <label class="input-label" for="servico">Serviço</label>
                     <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
                 </div>
                 <button type="submit"class="botao">
-                    Salvar Produto
+                    Salvar Agendamento
                 </button>
             </form>
         </section>
@@ -63,5 +63,4 @@
     
 </body>
 
-<script type="module" src="../controller/atualizaProduto-controller.js"></script>
 </html>
