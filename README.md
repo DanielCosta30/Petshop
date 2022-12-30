@@ -3,6 +3,17 @@
 
 <h1 align="center">:file_cabinet: Projeto Petshop</h1>
 
+<br></br>
+<h2>Produtos</h2>
+
+## ![Produtos](https://user-images.githubusercontent.com/81030386/210096768-1a7d0505-76b5-4297-94b6-164117b95673.jpeg)
+<h2>Clientes</h2>
+
+## ![Clientes](https://user-images.githubusercontent.com/81030386/210096893-e7af0c3d-9a0b-4322-a4d5-ec64ff5b0fee.jpeg)
+<h2>Agendamentos</h2>
+
+## ![Agendamentos](https://user-images.githubusercontent.com/81030386/210097000-6be4531e-6adb-4ab0-862d-41b08d35f7f4.jpeg)
+
 ## :memo: Descrição:
 O projeto possui duas parte, front end e back-end, onde a primeira parte cosiste em:
 <br>Front-End:</br> Primeira parte é um CRUD com cadastro de clientes, produtos e agendamento.
