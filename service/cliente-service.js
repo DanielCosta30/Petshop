@@ -10,7 +10,7 @@ var listaClientes = () => {
     })
 }
 
-var criaCliente = (nome, email) => {
+var criaCliente = (nome, email, contato) => {
     return fetch(`http://localhost:3000/profile`, {
         method: 'POST',
         headers: {
@@ -18,7 +18,8 @@ var criaCliente = (nome, email) => {
         },
         body: JSON.stringify({
                 nome: nome,
-                email: email
+                email: email,
+                contato: contato
             })
     })
     .then( resposta => {
@@ -50,7 +51,7 @@ var detalhaCliente = (id) => {
     })
 }
 
-var atualizaCliente = (id, nome, email) => {
+var atualizaCliente = (id, nome, email, contato) => {
     return fetch(`http://localhost:3000/profile/${id}`, {
         method: 'PUT',
         headers: {
@@ -58,7 +59,8 @@ var atualizaCliente = (id, nome, email) => {
         },
         body: JSON.stringify ({
                 nome: nome,
-                email: email
+                email: email,
+                contato: contato
             })        
     })     
     .then ( resposta => {

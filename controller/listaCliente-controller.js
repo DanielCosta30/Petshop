@@ -46,7 +46,7 @@ var render = async () => {
         var listaClientes= await clienteService.listaClientes()  
 
         listaClientes.forEach (elemento => {
-        tabela.appendChild(criaNovaLinha(elemento.nome,elemento.email, elemento.id))       
+        tabela.appendChild(criaNovaLinha(elemento.nome,elemento.email,elemento.contato, elemento.id))       
     })
     }
     catch(erro){

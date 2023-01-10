@@ -7,8 +7,9 @@ formulario.addEventListener('submit', async (evento)=> {
         evento.preventDefault()
         var nome = evento.target.querySelector('[data-nome]').value
         var email = evento.target.querySelector('[data-email]').value
+        var contato = evento.target.querySelector('[data-contato]').value
     
-        await clienteService.criaCliente(nome,email)
+        await clienteService.criaCliente(nome,email,contato)
         window.location.href = '../telas/cadastro_concluido.html'       
     }
     catch(erro){

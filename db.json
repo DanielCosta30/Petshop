@@ -1,19 +1,16 @@
 {
   "profile": [
     {
-      "nome": "felipe Costa",
+      "nome": "felipe Mendes",
       "email": "felipe@alura.com",
+      "contato": "",
       "id": 1
     },
     {
       "nome": "Lucia Mendes",
       "email": "Lucia@gmail.com",
+      "contato": "",
       "id": 4
-    },
-    {
-      "nome": "João Paulo",
-      "email": "Jp@gmail.com",
-      "id": 5
     }
   ],
   "produto": [
@@ -21,8 +18,8 @@
       "codigo": "001",
       "produto": "Ração Premiun Adulto",
       "unidade": "Kg",
-      "preco": "37,00 R$",
-      "estoque": "8.00",
+      "preco": "39,00 R$",
+      "estoque": "15.00",
       "id": 1
     },
     {
@@ -40,40 +37,48 @@
       "preco": "50,00",
       "estoque": "13.00",
       "id": 3
+    },
+    {
+      "codigo": "004",
+      "produto": "Briquedo",
+      "unidade": "Und",
+      "preco": "12,00 R$",
+      "estoque": "5.00",
+      "id": 4
     }
   ],
   "agendamento": [
     {
-      "cliente": "Maria Carla",
-      "pet": "Chico",
-      "data": "23/12/22",
-      "hora": "10:00Hs",
-      "servico": "Banho",
-      "id": 1
+      "cliente": "Pedro Borges",
+      "pet": "Belinha",
+      "data": "29/12/22",
+      "hora": "13:00",
+      "servico": "Banho + Tosa",
+      "id": 5
     },
     {
-      "cliente": "Daniel Costa",
-      "pet": "Zara",
-      "data": "23/12/22",
-      "hora": "12:00Hs",
-      "servico": "Banho + tosa",
-      "id": 2
+      "cliente": "Mônica Silva",
+      "pet": "Thor",
+      "data": "19/12/22",
+      "hora": "16:30",
+      "servico": "Consulta Veterinario",
+      "id": 6
     },
     {
       "cliente": "Luciana Pereira",
-      "pet": "Zeus",
-      "data": "24/12/22",
-      "hora": "9:00Hs",
-      "servico": "Consulta Veterinario",
-      "id": 3
+      "pet": "Luna",
+      "data": "23/09/2022",
+      "hora": "08:00",
+      "servico": "Banho + Tosa",
+      "id": 7
     },
     {
-      "cliente": "Jose Henrique",
+      "cliente": "Luciana Pereira",
       "pet": "Lupita",
-      "data": "28/12/2022",
-      "hora": "16:00Hrs",
+      "data": "29/12/22",
+      "hora": "12:00",
       "servico": "Banho + Tosa",
-      "id": 4
+      "id": 8
     }
   ]
 }
